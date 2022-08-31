@@ -4,9 +4,9 @@ public class Book {
     private String nameBook;
     private int age;
 
-    private String author;
+  private Author author;
 
-    public Book(String nameBook, String author, int age) {
+    public Book(String nameBook, Author author, int age) {
         this.author = author;
         this.nameBook = nameBook;
         this.age = age;
@@ -14,13 +14,13 @@ public class Book {
 
 
     public String getNameBook() {
-        return this.nameBook;
+        return nameBook;
     }
     public int getAge() {
-        return this.age;
+        return age;
     }
-    public String getAuthor() {
-        return this.author;
+    public Author getAuthor() {
+        return author;
     }
     public int setAge() {
         return this.age;
@@ -44,7 +44,7 @@ public class Book {
         return "Book{" +
                 "nameBook='" + nameBook + '\'' +
                 ", age=" + age +
-                ", author='" + author + '\'' +
+                ", author='" + author.toString() + '\'' +
                 '}';
     }
 }

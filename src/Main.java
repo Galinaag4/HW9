@@ -1,11 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        Book one= new Book("Классика","Борис Виан",1974);
-        Author BookOne = new Author("Борис","Виан");
+        Author author= new Author("Борис","Виан");
+        Book one= new Book("Классика",author,1974);
 
 
 
-        System.out.println(one.getNameBook()+one.getAge()+one.getAuthor());
+
+        System.out.println(one);
     }
 
 }
